@@ -1,0 +1,91 @@
+
+#app[data-v-7ba5bd90] {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin-top: 30px;
+}
+.header[data-v-7ba5bd90] {
+  text-align: left;
+  font-size: 50px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.header span[data-v-7ba5bd90] {
+  margin-left: 20px;
+  word-break: break-all;
+}
+.vue_logo[data-v-7ba5bd90] {
+  width: 50px;
+  vertical-align: middle;
+}
+.github_icon[data-v-7ba5bd90] {
+  float: right;
+  margin-top: 15px;
+  margin-right: 25px;
+}
+.github_icon[data-v-7ba5bd90]:hover {
+  transform: scale(1.1);
+}
+.demo-container[data-v-7ba5bd90] {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  height: calc(100vh - 150px);
+  display: flex;
+}
+.control_panel[data-v-7ba5bd90] {
+  width: 300px;
+  padding-top: 20px;
+  border-right: 1px solid #ebebeb;
+}
+.control_panel div[data-v-7ba5bd90]{
+  padding-top: 20px;
+}
+.main-footer[data-v-7ba5bd90] {
+  margin-top: 10px;
+  float: right;
+}
+
+
+body[data-v-7ba5bd90],
+ul[data-v-7ba5bd90] {
+  margin: 0;
+  padding: 0;
+}
+ul[data-v-7ba5bd90] {
+  list-style: none;
+}
+.wrapper[data-v-7ba5bd90] {
+  /* position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0; */
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 60% !important;
+  width: 60% !important;
+  max-width: 300px;
+  max-height: 600px;
+  border: 1px solid #000;
+  /* transform: translateY(-50%); */
+  overflow: hidden;
+}
+.list[data-v-7ba5bd90] {
+  background-color: #70f3b7;
+}
+.list-item[data-v-7ba5bd90] {
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.v-momentum-scroll_Default[data-v-9442ad82] {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
