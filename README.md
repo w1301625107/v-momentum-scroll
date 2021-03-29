@@ -68,13 +68,15 @@ Vue.use(MomentumScroll);
 
 ```html
 <template>
-  <v-momentum-scroll >
+  <v-momentum-scroll class="wrapper">
     <!-- 需要滚动的东西 -->
   </v-momentum-scroll>
 </template>
 ```
 
 ```css
+// 需要明确的宽度和高度，同时position值不能为static
+// 默认为position值relative,宽高各100px,不然会导致异常显示
 .wrapper {
   height: 60% !important;
   width: 60% !important;
@@ -100,5 +102,8 @@ Vue.use(MomentumScroll);
 
 
 ## changelog
+1.0.1
+- 修复无法滚动到0的问题
+
 1.0.0
 - init

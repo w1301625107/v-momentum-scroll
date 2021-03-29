@@ -1,6 +1,6 @@
 {
   "name": "v-momentum-scroll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simulate momentum scroll.",
   "main": "dist/v-momentum-scroll.umd.min.js",
   "files": [
