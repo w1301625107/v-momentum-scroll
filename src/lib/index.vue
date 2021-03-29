@@ -37,6 +37,7 @@ const WEEK_BOUNCE = "weekBounce";
 const STRONG_BOUNCE = "strongBounce";
 function noop() {}
 export default {
+  name:"MomentumScroll",
   computed: {
     scrollerStyle() {
       return {
@@ -189,11 +190,6 @@ export default {
         );
       }
       this.type = type;
-      console.log("🚀 ~ file: index.vue ~ line 188 ~ momentum ~ type", type);
-      console.log(
-        "🚀 ~ file: index.vue ~ line 193 ~ momentum ~ destination",
-        destination
-      );
       return {
         destination,
         duration: durationMap[type],
@@ -248,16 +244,14 @@ export default {
     },
     bounceTo(el, callback) {
       let offsetY = this.getOffsetTop(el);
-      if (!offsetY) return;
+      if (offsetY===undefined) return;
       if (offsetY < this.minY) offsetY = this.minY;
 
-      if (offsetY) {
-        if (callback) this.bounceCallback = callback;
-        let type = NO_BOUNCE;
-        this.offsetY = offsetY;
-        this.duration = durationMap[type];
-        this.bezier = bezierMap[type];
-      }
+      if (callback) this.bounceCallback = callback;
+      let type = NO_BOUNCE;
+      this.offsetY = offsetY;
+      this.duration = durationMap[type];
+      this.bezier = bezierMap[type];
     },
     getOffsetTop(el) {
       // 获取元素位于 v-momentum-scroll 的 offsetTop
@@ -286,7 +280,7 @@ export default {
         return console.error('typeof speed != "number"');
       if (this.constantScrolling) return;
       let offsetY = this.getOffsetTop(el);
-      if (!offsetY) return;
+      if (offsetY === undefined) return;
       if (offsetY < this.minY) offsetY = this.minY;
       this.constantScrolling = true;
 
